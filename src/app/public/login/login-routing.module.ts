@@ -3,8 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-    {path: '', pathMatch: 'full', redirectTo: 'login'},
-    {path: 'login', component: LoginComponent}
+    {path: '', component: LoginComponent}
 ]
 
 @NgModule({
