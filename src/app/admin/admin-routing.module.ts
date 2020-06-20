@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     {path: '', component: AdminComponent, children: [
-        {path: '', pathMatch: 'full', redirectTo: 'admin'},
-        {path: 'admin', loadChildren: () => import('./users/users.module').then(m => m.UserModule)}
+        {path: '', pathMatch: 'full', redirectTo: 'users'},
+        {path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UserModule)}
     ]}
 ]
 
